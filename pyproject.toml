@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gptdocsearch"
+version = "0.1.0"
+description = ""
+authors = ["tszalama <96135418+tszalama@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.8"
+gradio = "^3.38.0"
+pandas = "^2.0.3"
+numpy = "^1.25.1"
+python-dotenv = "^1.0.0"
+pypdf2 = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

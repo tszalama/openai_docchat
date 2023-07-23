@@ -1,0 +1,934 @@
+,Unnamed: 0.7,Unnamed: 0.6,Unnamed: 0.5,Unnamed: 0.4,Unnamed: 0.3,Unnamed: 0.2,Unnamed: 0.1,Unnamed: 0,prompt,question,answer,tokens_used,request_time
+0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  How many extension fields can be added to an object?
+Answer:",How many extension fields can I add to an object?, You can create up to 50 extension fields.,1564.0,4.836254199966788
+1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  What are the limitations of creating up to 50 extension fields?
+Answer:",Are there any limitations to this?, The limitation of creating up to 50 extension fields is that they cannot be deleted.,1596.0,6.012052700039931
+2,2.0,2.0,2.0,2.0,2.0,2.0,,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  How many extension fields are available?
+Answer:",How many extenstion fields can I add?, You can create up to 50 extension fields.,1556.0,2.9538905000081286
+3,3.0,3.0,3.0,3.0,3.0,,,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  Are there any limitations to creating extension fields?
+Answer:",Any limitations?," Yes, you can create up to 50 extension fields.",1581.0,3.1433377999346703
+4,4.0,4.0,4.0,4.0,,,,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  Are there any other limitations to creating extension fields?
+Answer:",Any other limitations?, I don't know.,1599.0,2.519960399949923
+5,5.0,5.0,5.0,,,,,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  Is it possible to delete extension fields?
+Answer:",Can I delete them?," No, it is not possible to delete extension fields.",1620.0,4.09460750001017
+6,6.0,6.0,,,,,,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Employees  
+You can create employee records manually or upload employee data via migration tool in the 
+implementation project activity.  
+Procedure  
+1. Navigate to your  User Menu and select  Settings   All Settings   Company   Employees.  
+2. In the worklist of the employees view, choose  Create.  
+3. Enter as much personal, organizational, and contact information as you require.  
+4. Choose  Save.  
+ 
+Edit Employees  
+Edit an employee record.  
+Procedure  
+1. In the worklist of the emplo yees view, click the employee record.  
+2. In the quick view, click open details.  
+3. If you want to delimit the validity of an employee record, enter the appropriate date in the  Valid 
+To field. From this date onward, this employee record cannot be used for new bus iness 
+processes.  
+4. System automatically saves the changes you made.  
+ Add Employees and Managers to Org Units  
+As an administrator, you can identify an employee as a manager by defining that employee as the 
+manager of an org unit. The manager of an org unit enjoys unique access privileges and can access the 
+data of their subo rdinates.  
+Note  
+Employees and managers need the Primary Indicator. An employee can be marked as main by using the 
+primary indicator for only one org unit. An employee who is marked as main in an org unit may only be 
+added as a secondary employee in another org unit.  
+Prerequisties:  
+▪ The employees you want to assign to the org unit have been created in the system.  
+▪ Alternatively, you can assign employees to org units when you create the employee data in the 
+system.  
+Procedure  
+1. From the  Org Structure  screen, select  the relevant org unit from the list.  
+2. On the  Employees  tab, click  Add (
+) to assign employees on the  Employees  view or a manager 
+on the  Managers  view to the org unit.  
+3. Select the employee or manager you want to assign to the org unit and select the icon (
+ ). 
+4. Save  your entries.  
+ 
+
+Question:  How can I add an employee?
+Answer:",How do I add an employee?," Navigate to your User Menu and select Settings > All Settings > Company > Employees. In the worklist of the employees view, choose Create. Enter as much personal, organizational, and contact information as you require. Choose Save.",731.0,5.037794400006533
+7,7.0,,,,,,,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  How many extension fields are available to add?
+Answer:",How many extension fields can I add?, You can create up to 50 extension fields.,1661.0,2.347374100005254
+8,,,,,,,,,"Answer the following question using only the given Context. If you don't know the answer for certain, say I don't know.
+
+Context:
+Create Extension Fields  
+Extension fields are additional fields that you, as an administrator, can add to a cloud solution from SAP .  
+Extension fields provide the means to store additional data for specific use cases beyond what is natively 
+present in the solution. You can create these fields for a screen that has been enabled for extension 
+fields.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the dropdown list 
+select  Settings   All Settings   General  and click  Extensibility Administration.  
+The system opens a new screen and displays a list of all business entities in the left panel. These entities 
+are grouped by services.  
+2. Click the  Extendable  checkbox to view the entities that can be extended.  
+3. Drill down to the en tity you want to add an extension field to, and select it. The system opens 
+the corresponding worklist.  
+4. In the  Custom Fields  tab, click the add icon (  
+ ) to open the  Create Fields  quick create screen.  
+5. Enter the  Label. The system autopopulates the name.  
+6. Select the  Data Type  and the corresponding  Data Format.  
+7. Click  Save.  
+The extension field is now created and is listed under the  Custom Fields  tab. 
+Note  
+▪ You can’t delete extension fields currently.  
+▪ You can create up to 50 extension fields.  Create Determinat ions 
+Use determinations to calculate specific field value based on certain conditions. You can 
+either default or propose the value or mandate a certain value using determinations.  
+Procedure  
+1. Navigate to your user profile on the top -right corner of your screen, and from the 
+dropdown list select  Settings   All Settings   General  and click  Extensibility 
+Administration . 
+The system opens a new screen and displays a list of all business entities in th e left 
+panel. These entities are grouped by services.  
+2. Select a service and click the  Drill Down  icon (
+ ) to open and select an entity.  
+3. Navigate to the  Determinations  tab and click the  Create Determination  icon 
+( 
+). The system launches the determination ed itor tab.  
+The editor has three main blocks:  
+▪ Header: Specify the determination name, event, and description here.  
+▪ Condition: Set the desired conditions using a flow -based visual condition 
+editor.  
+▪ Assignment: Assign a value to specific fields. You can use ea ch row to 
+assign a single field value. For example, total_amount = item_count * 
+item_price.  
+4. In the header block, perform the following actions:  
+a. Enter a name.  
+b. Choose one of the following events:  
+▪ Pre Hook: You can use it to default or suggest standard and custom 
+field values. The user can change the field values.  
+▪ Post Hook: You can use it to mandate custom field values. The user 
+cannot overwrite the field values.  
+c. Add a description.  5. In the  Condition  Block  set the desired conditions using a flow -based visual 
+condition editor.  
+a. Select the standard or extension field from the dropdown.  
+b. Select the comparison operator.  
+c. Select the target comparison. You can compare either by a fixed value or with 
+another fi eld. 
+d. If you choose  Value , enter a corresponding target value. If you choose  Field , 
+select a target field.  
+Add multiple conditions by clicking the  Add Condition  icon (  
+). To remove a condition, 
+click the  Remove Condition  (
+). To clear all conditions in a b lock, click the  Delete 
+Condition Block  icon (
+ ) 
+Note that when you create multiple conditions, the condition group is considered fulfilled 
+only if all the conditions within a group are met.  
+6. Optional: You can also create an OR condition by clicking the  + Or button. The 
+system displays additional condition blocks. Follow the same steps as earlier to 
+fill one or more OR condition blocks.  
+Note  
+When you create multiple OR conditions, the condition  group is considered fulfilled if 
+any one of the block conditions are met.  
+Under the  Summary  header, the system shows you a summary of all the conditions that 
+you’ve entered.  
+7. In the  Assignment Block  perform the following actions:  
+▪ Use a row to assign or cal culate value to a specific field.  
+▪ Write the expressions and calculations in free -style format.  
+▪ Mention the target field first, followed by “=” and then specify the 
+expression. For example, {status} = ('Open')  
+▪ Enclose all entity fields in curly braces: For example, {status}, {ID}, and so 
+on. ▪ Ensure that you add the extension/custom fields under the extensions 
+structure. For example, {extensions/customfield}  
+▪ Get the technical name of the fields using the dropdown in the  Condition 
+Block . 
+▪ Use expressions consis ting of operators and certain pre -defined functions 
+specified in the  Assignment Block . 
+▪ Ensure that you check the feedback provided by the system in case of 
+invalid expressions. The error messages are configured to give exact 
+feedback so that you can correc t the expression.  
+▪ Create additional assignment rows by clicking the  Add Assignment  icon 
+( 
+). To remove a row, click the  Remove Assignment  icon (
+ ). Click  Clear 
+All to remove all assignment rows.  
+▪ Click  + Else  to create one more set of condition blocks that  are triggered if 
+the initial sets of conditions are not satisfied. Note that you can create an 
+Else block only when you have at least one condition in the initial IF block. 
+Follow the same steps to create Else conditions and assignments inside 
+the Else bl ock. 
+8. Click  Save and Activate . 
+Note  
+You can create a maximum of five determinations per entity.  
+In the  Determinations  tab, the system lists all determinations for a specified entity. 
+Click the  Edit (
+) or Delete  (
+) icons to edit or delete the corresponding determination.  
+
+Question:  Are there any limitations to creating up to 50 extension fields?
+Answer:",Any limitations to this?," Yes, you cannot delete extension fields currently.",1688.0,2.159094200003892
